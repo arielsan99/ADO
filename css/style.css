@@ -1,0 +1,115 @@
+.tooltipa {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipa .tooltiptexta {
+  visibility: hidden;
+  width: 450px;
+  background-color: white;
+  color: #080433;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipa .tooltiptexta::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltipa:hover .tooltiptexta {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.img_fondo{
+  background-image: url("../img/principal.png");
+}
+.div1 {
+     overflow:scroll;
+     width:70%;
+}
+.scrollme {
+    overflow-x: auto;
+}
+.optionColor {
+  color:#33ccff;
+}
+
+.tm-btn2 {
+    padding: 15px 50px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.tm-btn2:hover,
+.tm-btn2:focus {
+    color: #33ccff;
+    border-color: #33ccff;
+}
+
+.tm-btn2-submit {
+    border-radius: 0;
+    display: block;
+    padding: 15px 43px;
+}
+
+#Columnas{
+  column-count:4;
+   column-gap:20px;
+   column-rule:4px dotted gray;
+   list-style: none;
+}
+
+#resultado{
+  visibility: hidden;
+}
+
+main{
+  column-count: 2;
+  column-gap: 3em;
+  column-width: 140px;
+}
+
+select .selectAltura {
+  height:50px;
+}

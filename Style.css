@@ -1,0 +1,115 @@
+.botonF1{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    right:0;
+    bottom:0;
+    position:fixed;
+    margin-right:36px;
+    margin-bottom:36px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+.botonF1{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    right:0;
+    bottom:0;
+    position:fixed;
+    margin-right:66px;
+    margin-bottom:66px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+
+span{
+    transition:.5s;
+}
+.botonF1:hover span{
+    transform:rotate(360deg);
+}
+.botonF1:active{
+    transform:scale(1.1);
+}
+.botonF2:hover span{
+    transform:rotate(360deg);
+}
+.botonF2:active{
+    transform:scale(1.1);
+}
+.titulo{
+    background-color: #273042;
+    color: white;
+}
+#formEstrate td{
+    font-size: 22px;
+    border: 2px white solid;
+
+    text-align: center;
+}
+.datotb{
+    background: #aebfec;
+}
+#formEstrate input[type=checkbox]{
+    transform: scale(1.4);
+    border-radius: 2px;
+}
+#formEstrate input[type=checkbox]:checked {
+    background-color: red;
+}
+#formEstrate h4,h5 {
+    color: white;
+}
+#aSelect {
+  background-color: #273042;
+  color: #ffffff;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox-1 {
+  display: inline-block;
+  vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background: #ededed;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.checkbox-1 label {
+    background: #ede8e8;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+    transition: all .5s ease;
+    transition: all .5s ease;
+}
+.checkbox-1 input[type=checkbox]:checked + label {
+    background: #273042;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+}

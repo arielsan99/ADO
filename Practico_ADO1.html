@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>INFELCOM</title>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/tooplate-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/grafico3.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		var renderPage = true;
+	</script>
+</head>
+
+<body>
+	<!-- Loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="container-fluid tm-main img_fondo">
+		<div class="row tm-main-row">
+
+			<!-- Sidebar -->
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="principal.png" data-page="#tm-section-1">
+									<i class="fas fa-laptop tm-nav-fa-icon"></i>
+									<span>Software</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+					<!-- section 1 -->
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">ANÁLISIS DE PROBLEMAS</h1></header>
+						</div>
+
+						<p>
+							Este paso antecede al análisis de objetivos en la metodología del marco lógico (MML) y en este paso se transcriben los efectos de primero y segundo nivel que vienen del árbol de problemas, luego se transcribe el problema central y por ultimo las causas de primer, segundo y tercer nivel.
+						</p>
+						<button class="btn btn-white" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" type="submit" id="p1"><b>?</b></button>
+
+
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									<header><h2 class="tm-text-shadow">1. Efectos </h2></header>
+								</div>
+							</div>
+							<div class="row tm-page-4-content">
+								<div class="col-md-12 col-sm-12 tm-contact-col">
+									<div class="contact_message">
+										<br>
+
+										<table>
+												<tr style="text-align: center">
+														<td><h4>Lista</h4></td>
+														<td><h4 >Efectos nivel 1</h4></td>
+												</tr>
+												<tr>
+
+
+												<td class="align-bottom-center">
+													<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposListEfecto0(0)" /><b>+</b></button></td>
+
+												</td>
+												<td>
+														<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listEfecto0_0" placeholder="Escribir..."></textarea>
+														<div id="camposP0">
+														</div>
+												</td>
+										</tr>
+
+										</table>
+
+										<br><br>
+										<table>
+											<tr style="text-align: center">
+													<td><h4>Lista</h4></td>
+													<td><h4 >Efectos nivel 2</h4></td>
+											</tr>
+											<tr>
+											<td class="align-bottom-center">
+												<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposEvaluacion(1)" /><b>+</b></button></td>
+
+											</td>
+											<td>
+													<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listEfecto1_0" placeholder="Escribir..."></textarea>
+													<div id="camposP1">
+													</div>
+											</td>
+									</tr>
+
+									</table>
+
+									<br><br>
+										<table>
+											<tr style="text-align: center">
+													<td><h4>Lista</h4></td>
+													<td><h4 >Efectos nivel 3</h4></td>
+											</tr>
+											<tr>
+
+
+											<td class="align-bottom-center">
+												<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposListEfecto2(2)" /><b>+</b></button></td>
+
+											</td>
+											<td>
+													<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listEfecto2_0" placeholder="Escribir..."></textarea>
+													<div id="camposP2">
+													</div>
+											</td>
+									</tr>
+
+									</table>
+
+									<br>
+									<div class="col-sm-12">
+										<br>
+										<header><h2 class="tm-text-shadow">2. Problema central </h2></header>
+										<br>
+									</div>
+
+									<hr style="border:15px;"><hr style="border:2px;">
+									<table>
+										<tr style="text-align: center">
+												<td><h4>Lista</h4></td>
+												<td><h4 >Definicion del problema</h4></td>
+
+										</tr>
+										<tr>
+
+										<td class="align-bottom-center">
+										</td>
+										<td>
+												<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listProblemas0_0" placeholder="Escribir..."></textarea>
+												<div id="camposP3">
+												</div>
+										</td>
+								</tr>
+
+								</table>
+
+										<br><br>
+
+										<div class="row mb-4">
+											<div class="col-sm-12">
+												<header><h2 class="tm-text-shadow">3. Causas </h2></header>
+											</div>
+										</div>
+										<div class="row tm-page-4-content">
+											<div class="col-md-12 col-sm-12 tm-contact-col">
+												<div class="contact_message">
+													<br>
+
+													<table>
+															<tr style="text-align: center">
+																	<td><h4>Lista</h4></td>
+																	<td><h4 >Causas nivel 1</h4></td>
+															</tr>
+															<tr>
+
+
+															<td class="align-bottom-center">
+																<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposListCausa0(4)" /><b>+</b></button></td>
+
+															</td>
+															<td>
+																	<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listCausa0_0" placeholder="Escribir..."></textarea>
+																	<div id="camposP4">
+																	</div>
+															</td>
+													</tr>
+
+													</table>
+													<br>
+													<table>
+														<tr style="text-align: center">
+																<td><h4>Lista</h4></td>
+																<td><h4 >Causas nivel 2</h4></td>
+														</tr>
+														<tr>
+
+
+														<td class="align-bottom-center">
+															<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposListCausa1(5)" /><b>+</b></button></td>
+
+														</td>
+														<td>
+																<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listCausa1_0" placeholder="Escribir..."></textarea>
+																<div id="camposP5">
+																</div>
+														</td>
+												</tr>
+
+												</table>
+												<br>
+												<table>
+													<tr style="text-align: center">
+															<td><h4>Lista</h4></td>
+															<td><h4 >Causas nivel 3</h4></td>
+													</tr>
+													<tr>
+
+
+													<td class="align-bottom-center">
+														<button class="btn btn-light" style="width:30px;height:30px;border-radius: 100%;font-size: 12px;" id="add_camposInterno()" onClick="addCamposListCausa2(7)" /><b>+</b></button></td>
+
+													</td>
+													<td>
+															<textarea class="form-control"  rows="2" cols="60" style="resize: none" id="listCausa2_0" placeholder="Escribir..."></textarea>
+															<div id="camposP7">
+															</div>
+													</td>
+											</tr>
+
+											</table>
+
+										<br><br>
+
+										<a onclick="addDataPaso2_2()" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continuar</a>
+										<a id="btnCapturar"  class="btn tm-btn tm-font-big btn-draw-1-ado1" data-nav-link="#tmNavLink2">Descargar imagen</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</section>
+
+					<div  id="toa1"class="toast position-fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000" style="position: absolute; top: 10px; right: 0;" >
+						<div class="toast-header">
+								<svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#a71d2a"></rect></svg>
+								<strong class="mr-auto">Ayuda</strong>
+								<small>10sg se cierra</small>
+								<button id="cl1" type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+										<span aria-hidden="true">×</span>
+								</button>
+						</div>
+						<div class="toast-body">
+								<h5 style="color: #080433">Análisis</h5>
+								<h6 style="color: #080433">El análisis del problema consiste en una descripción, que se basa en datos obtenidos en el diagnóstico y se van relacionando con el problema principal, las causas y los efectos, redacción que se hace en forma clara y objetiva.
+								</h6>
+						</div>
+				</div>
+				</div>	<!-- .tm-content -->
+				<footer class="footer-link">
+					<p class="tm-copyright-text">Copyright &copy; 2021 Grupo de investigacion INFELCOM
+
+                    - infelcom@uptc.edu.co</p>
+				</footer>
+			</div>	<!-- row -->
+		</div>
+
+
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+		function setupCarousel() {
+
+			if($('#tm-section-2').css('display') == "none") {
+			}
+			else {
+
+				var slider = $('.tm-img-slider');
+				var windowWidth = $(window).width();
+
+				if (slider.hasClass('slick-initialized')) {
+					slider.slick('destroy');
+				}
+
+				// Init Magnific Popup
+				$('.tm-img-slider').magnificPopup({
+				  delegate: 'a', // child items selector, by clicking on it popup will open
+				  type: 'image',
+				  gallery: {enabled:true}
+				  // other options
+				});
+      		}
+  		}
+
+  		// Setup Nav
+  		function setupNav() {
+  			// Add Event Listener to each Nav item
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+
+		    	setupCarousel();
+		    	setupFooter();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });
+  		}
+
+  		function changePage(currentNavItem) {
+  			// Update Nav items
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	// Show current page
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	// Change background image
+	    	var bgImg = currentNavItem.data("bgImg");
+	    	$.backstretch("img/" + bgImg);
+  		}
+
+  		// Setup Nav Toggle Button
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+  		function setupFooter() {
+
+  			var padding = 100;
+  			var footerPadding = 40;
+  			var mainContent = $("section"+currentPageID);
+  			var mainContentHeight = mainContent.outerHeight(true);
+  			var footer = $(".footer-link");
+  			var footerHeight = footer.outerHeight(true);
+  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			var windowHeight = $(window).height();
+
+  			if(totalPageHeight > windowHeight){
+  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
+  				footer.css("bottom", footerHeight + "px");
+  			}
+  			else {
+  				$(".tm-content").css("margin-bottom", "0");
+  				footer.css("bottom", "20px");
+  			}
+  		}
+
+  		// Everything is loaded including images.
+      	$(window).on("load", function(){
+
+      		// Render the page on modern browser only.
+      		if(renderPage) {
+				// Remove loader
+		      	$('body').addClass('loaded');
+
+		      	// Page transition
+		      	var allPages = $(".tm-section");
+
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+
+			    if(linkToAnotherPage != null) {
+
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+
+		      	// Hide all pages
+		      	allPages.hide();
+
+		      	$("#tm-section-1").fadeIn();
+
+		     	// Set up background first page
+		     	var bgImg = $("#tmNavLink1").data("bgImg");
+
+		     	$.backstretch("img/" + bgImg, {fade: 500});
+
+		     	// Setup Carousel, Nav, and Nav Toggle
+			    setupCarousel();
+			    setupNav();
+			    setupNavToggle();
+			    setupFooter();
+
+			    // Resize Carousel upon window resize
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    	setupFooter();
+			    });
+      		}
+		});
+
+		$(document).ready(function(){
+        $("#p1").click(function () {
+            $('#toa1').toast('show');
+        });
+    });
+
+		</script>
+	</body>
+
+
+</html>
